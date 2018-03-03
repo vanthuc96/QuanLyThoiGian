@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.quanlythoigian.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Quản lý công việc hàng tuần"
+        android:background="@color/colorGreen"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:text="Công việc:"/>
+
+        <EditText
+            android:id="@+id/editcongviec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="8"
+            android:text="Nội dung:"/>
+
+        <EditText
+            android:id="@+id/editnoidung"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Ngày HT:"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btndate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:text="Date" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Giờ HT:"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btntime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:text="Time" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncongviec"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="160dp"
+        android:text="Thêm CV"
+        android:textSize="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Danh sách công việc:"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreen"
+        android:textSize="20dp"/>
+    <ListView
+        android:id="@+id/lvcongviec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>
